@@ -43,6 +43,3 @@ node_modules
 .sass-cache
 .jekyll-metadata
 *.gem
-
-#imswebra
-/assets/img/imswebra
