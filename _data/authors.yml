@@ -8,7 +8,8 @@ imswebra:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Hi, imswebra! Though it is [not hard to pronounce,](/about/#Pronunciation) the name makes for some interesting sentence structure. This website is where I document my projects and thoughts.
+    Hi, my name is Eric, better known online as [imswebra](about/#Pronunciation)! This is my website dedicated to following all of my creations and other adventures, good or abominable. Enjoy your stay, but please remember to remain seated with your legs and arms inside the vehicle at all times... just in case.
+
 
   # This photo will be used in the about section
   picture:
