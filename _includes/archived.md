@@ -1,2 +1,2 @@
-**NOTE**: This post has been tagged as `archived.` This means that the project was created prior to the website's creation, and there may be limited in information on its details.
+**NOTE**: This post is marked as `archived.` This means that the project was created prior to the website's creation and therefore the details on the project may be limited or inaccurate. In addition, there may not be a download if I no longer have the original source files.
 {:.message}

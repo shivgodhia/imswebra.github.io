@@ -28,4 +28,7 @@ I asked my friends to describe me in under four words. More specifically, the me
 im·swe·bra  
 [contraction for "I am"]·[first syllable of Sweden]·[women's undergarment]
 
-Its origin in-fact has nothing to do with the belief that one is a Swedish-breast-support system, but rather a short story from my childhood. My youngest sister could not pronounce her Z's, and therefore often needed help doing up her "swipper," or would ask why rabbits run in "swig-swags." When we first went to zoo, we were rather surprised to see a "swebra," and hence the name was born.
+Its origin in fact has nothing to do with the belief that one is a Swedish-breast-support system, but rather a short story from my childhood. My youngest sister could not pronounce her Z's, and therefore often needed help doing up her "swipper," or would ask why rabbits run in "swig-swags." When we first went to zoo, we were rather surprised to see a "swebra," and hence the name was born.
+
+## The Website
+Built with [Jekyll,](https://jekyllrb.com/) running a slightly modified version of [@qwtel](https://qwtel.com/)'s [Hydejack Pro](https://qwtel.com/hydejack/). Developed and hosted on [Github.](https://github.com/)
