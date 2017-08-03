@@ -1,6 +1,6 @@
 ---
 layout: blog
 title: Blog
-menu: true
-order: 1
+# menu: true
+# order: 1
 ---
