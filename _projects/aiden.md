@@ -12,7 +12,7 @@ screenshot:
 image: '/assets/img/projects/aiden/sidebar-bg.jpg'
 color: '#e76500'
 
-caption: Layered Photoshop Text
+caption: Layered Photoshop text
 description: >
   Another skill-dev project, focusing on compositing in Photoshop
 
