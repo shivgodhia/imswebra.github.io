@@ -25,3 +25,5 @@ POSSIBLE INCLUDES:
 {% include archived.md %}
 
 TEXT
+
+![Full-width image](/assets/img/projects/PROJECTNAME/IMAGENAME.jpg){:.lead}
