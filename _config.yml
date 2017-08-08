@@ -110,7 +110,8 @@ exclude:
   - package-lock.json
   - Gemfile
   - Gemfile.lock
-  - /projects/_TEMPLATE.md
+  - /_projects/_TEMPLATE.md
+  - /_projects/hydejack
 
 kramdown:
   footnote_backlink: '&#x21a9;&#xfe0e;'
