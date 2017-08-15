@@ -112,7 +112,8 @@ exclude:
   - Gemfile.lock
   - /_projects/_TEMPLATE.md
   - /_projects/hydejack
-
+  - /_posts/hydejack
+  
 kramdown:
   footnote_backlink: '&#x21a9;&#xfe0e;'
   math_engine:       mathjax

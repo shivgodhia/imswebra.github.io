@@ -15,10 +15,6 @@ color: '#e76500'
 caption: Layered Photoshop text
 description: >
   Another skill-dev project, focusing on compositing in Photoshop
-
-links:
-  - title: High Res
-    url: /assets/img/projects/aiden/srcset_full.jpg
 ---
 
 This was another daily; made for the sake of making. I vaguely remember this being another artist emulation, but I cannot remember of who's.
