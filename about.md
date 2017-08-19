@@ -33,3 +33,5 @@ I asked my friends to describe me in under four words. More specifically, the me
 
 ## The Website
 Built with [Jekyll,](https://jekyllrb.com/) running a slightly modified version of [@qwtel](https://qwtel.com/)'s [Hydejack Pro](https://qwtel.com/hydejack/). Developed and hosted on [Github.](https://github.com/imswebra/imswebra.github.io)
+
+Any released projects are released freely under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license and are hosted on [Github.](https://github.com/imswebra?tab=repositories) Note that the website as a whole is **not** released under such terms.

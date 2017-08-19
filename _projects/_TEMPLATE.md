@@ -18,7 +18,7 @@ description: >
 
 links:
   - title: Download
-    url: URL
+    url: https://github.com/imswebra/PROJECTNAME
 ---
 
 POSSIBLE INCLUDES:

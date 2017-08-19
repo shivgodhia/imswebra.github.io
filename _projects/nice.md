@@ -16,6 +16,9 @@ caption: Custom monoline text
 description: >
   This was a simple project vectorizing a doodle made in class.
 
+links:
+  - title: Download
+    url: https://github.com/imswebra/nice
 ---
 
 The text was made with Illustrator's pen tool, following a basic, predetermined grid. Stoke width was then determined, and caps and corners were set to rounded.

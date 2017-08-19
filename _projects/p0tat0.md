@@ -15,6 +15,10 @@ color: '#a200b8'
 caption: Abstract experiment in Blender
 description: >
   This project was an abstract experiment in Blender aiming for a fractal-like 3D object, emulating the style of [David Zerba.](https://davidzerba.wordpress.com/tag/abstract/)
+
+links:
+  - title: Download
+    url: https://github.com/imswebra/p0tat0
 ---
 
 
