@@ -1,7 +1,7 @@
 ---
 layout: project
 title: TITLE
-date: DAY MONTH YEAR
+date: DAY(#) MONTH YEAR
 screenshot:
   src: /assets/img/projects/PROJECTNAME/srcset_quart.jpg
   srcset:
@@ -21,9 +21,9 @@ links:
     url: https://github.com/imswebra/PROJECTNAME
 ---
 
-POSSIBLE INCLUDES:
-{% include archived.md %}
-
 TEXT
 
 ![Full-width image](/assets/img/projects/PROJECTNAME/IMAGENAME.jpg){:.lead}
+
+POSSIBLE INCLUDES:
+{% include archived.md %}
