@@ -169,8 +169,6 @@ exclude:
   - package.json
   - package-lock.json
   - /_projects/_TEMPLATE.md
-  - /_projects/hydejack
-  - /_posts/hydejack
 include:
   - LICENSE.md
 

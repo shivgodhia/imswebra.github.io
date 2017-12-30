@@ -3,14 +3,14 @@ layout: project
 title: TITLE
 date: DAY(#) MONTH YEAR
 screenshot:
-  src: /assets/img/projects/PROJECTNAME/srcset_quart.jpg
+  src: /assets/img/projects/PROJECTNAME/srcset@0,25x.jpg
   srcset:
-    1920w: /assets/img/projects/PROJECTNAME/srcset_full.jpg
-    960w: /assets/img/projects/PROJECTNAME/srcset_half.jpg
-    480w: /assets/img/projects/PROJECTNAME/srcset_quart.jpg
+    1920w: /assets/img/projects/PROJECTNAME/srcset@1x.jpg
+    960w: /assets/img/projects/PROJECTNAME/srcset@0,5x.jpg
+    480w: /assets/img/projects/PROJECTNAME/srcset@0,25x.jpg
 
-image: '/assets/img/projects/PROJECTNAME/sidebar-bg.jpg'
-color: '#COLOR'
+accent_image: '/assets/img/projects/PROJECTNAME/sidebar-bg.jpg'
+accent_color: '#COLOR'
 
 caption: CAPTION
 description: >

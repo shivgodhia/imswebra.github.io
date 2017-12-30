@@ -3,11 +3,11 @@ layout: project
 title: Cubed
 date: 27 September 2014
 screenshot:
-  src: /assets/img/projects/cubed/srcset_quart.jpg
+  src: /assets/img/projects/cubed/srcset@0,25x.jpg
   srcset:
-    1920w: /assets/img/projects/cubed/srcset_full.jpg
-    960w: /assets/img/projects/cubed/srcset_half.jpg
-    480w: /assets/img/projects/cubed/srcset_quart.jpg
+    1920w: /assets/img/projects/cubed/srcset@1x.jpg
+    960w: /assets/img/projects/cubed/srcset@0,5x.jpg
+    480w: /assets/img/projects/cubed/srcset@0,25x.jpg
 
 accent_image: '/assets/img/projects/cubed/sidebar-bg.jpg'
 accent_color: '#00429c'

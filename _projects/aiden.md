@@ -3,11 +3,11 @@ layout: project
 title: Aiden
 date: 11 August 2015
 screenshot:
-  src: /assets/img/projects/aiden/srcset_quart.jpg
+  src: /assets/img/projects/aiden/srcset@0,25x.jpg
   srcset:
-    1920w: /assets/img/projects/aiden/srcset_full.jpg
-    960w: /assets/img/projects/aiden/srcset_half.jpg
-    480w: /assets/img/projects/aiden/srcset_quart.jpg
+    1920w: /assets/img/projects/aiden/srcset@1x.jpg
+    960w: /assets/img/projects/aiden/srcset@0,5x.jpg
+    480w: /assets/img/projects/aiden/srcset@0,25x.jpg
 
 accent_image: '/assets/img/projects/aiden/sidebar-bg.jpg'
 accent_color: '#e76500'

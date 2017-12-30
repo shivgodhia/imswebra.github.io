@@ -3,11 +3,11 @@ layout: project
 title: Nice
 date: 19 June 2015
 screenshot:
-  src: /assets/img/projects/nice/srcset_quart.jpg
+  src: /assets/img/projects/nice/srcset@0,25x.jpg
   srcset:
-    1920w: /assets/img/projects/nice/srcset_full.jpg
-    960w: /assets/img/projects/nice/srcset_half.jpg
-    480w: /assets/img/projects/nice/srcset_quart.jpg
+    1920w: /assets/img/projects/nice/srcset@1x.jpg
+    960w: /assets/img/projects/nice/srcset@0,5x.jpg
+    480w: /assets/img/projects/nice/srcset@0,25x.jpg
 
 accent_image: '/assets/img/projects/nice/sidebar-bg.jpg'
 accent_color: '#f3097f'
