@@ -9,12 +9,12 @@ screenshot:
     960w: /assets/img/projects/nice/srcset_half.jpg
     480w: /assets/img/projects/nice/srcset_quart.jpg
 
-image: '/assets/img/projects/nice/sidebar-bg.jpg'
-color: '#f3097f'
+accent_image: '/assets/img/projects/nice/sidebar-bg.jpg'
+accent_color: '#f3097f'
 
 caption: Custom monoline text
 description: >
-  This was a simple project vectorizing a doodle made in class.
+  This was a simple project vectorizing a doodle.
 
 links:
   - title: Download
