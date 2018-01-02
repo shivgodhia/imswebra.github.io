@@ -12,7 +12,7 @@ screenshot:
 accent_image: '/assets/img/projects/cubed/sidebar-bg.jpg'
 accent_color: '#00429c'
 
-caption: Rectangular-prism-ed doesn't quite have the same ring.
+caption: Rectangular-prism-ed doesn't quite have the same ring
 description: >
   This project is a derivative of a Blender Nerd tutorial, available [here.](https://vimeo.com/21098838)
 
