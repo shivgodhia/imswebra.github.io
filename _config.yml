@@ -59,6 +59,12 @@ permalink:             pretty
 paginate:              5
 paginate_path:         /blog/page-:num/
 
+# Default permalink configuration (used to get the custom posts url)
+defaults:
+  - scope:
+      type: posts
+    values:
+      permalink: /posts/:title/
 
 # Customizaton
 # ========================================================================================
@@ -170,6 +176,7 @@ exclude:
   - package.json
   - package-lock.json
   - /_projects/_TEMPLATE.md
+  - /git/
 include:
   - LICENSE.md
 

@@ -14,7 +14,7 @@ accent_color: '#993330'
 
 caption: Realize the real lies
 description: >
-  **NOTE**: [To read the story behind this project, click here.](/2017/07/04/flatearth/)
+  **NOTE**: [To read the story behind this project, click here.](/posts/flatearth/)
 
 links:
   - title: Download

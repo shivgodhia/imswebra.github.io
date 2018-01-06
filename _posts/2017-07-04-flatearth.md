@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Story of the Flat Earth Poster"
+title: The Story of the Flat Earth Poster
 
 accent_image: '/assets/img/projects/flatearth/sidebar-bg.jpg'
 accent_color: '#993330'
