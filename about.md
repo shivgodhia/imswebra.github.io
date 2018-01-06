@@ -29,6 +29,6 @@ Pronounced as: [contraction for "I am"]·[first syllable of Sweden]·[women's un
 Its origin in fact has nothing to do with believing one is a Swedish-breast-support system, but rather a short story from my childhood. My youngest sister could not pronounce her Z's, and therefore often needed help doing up her "swipper," or would ask why rabbits run in "swig-swags." When we first went to the zoo, we were rather surprised to see a "swebra," marking the birth of the name I would later adopt.
 
 ## The Website
-Built with [Jekyll,](https://jekyllrb.com/) running a slightly modified version of qwtel's [Hydejack Pro](https://qwtel.com/hydejack/). Developed on [Github.](https://github.com/imswebra/imswebra.github.io)
+Built with [Jekyll,](https://jekyllrb.com/) running qwtel's [Hydejack Pro.](https://qwtel.com/hydejack/) Developed on [Github.](https://github.com/imswebra/imswebra.github.io)
 
-Any released projects are released freely under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license and are hosted on [Github.](https://github.com/imswebra?tab=repositories) Note that the website as a whole is **not** released under such terms.
+Most released projects are released freely under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license and are hosted on [Github.](https://github.com/imswebra?tab=repositories) Note that the website as a whole is **not** released under such terms.
