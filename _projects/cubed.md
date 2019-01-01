@@ -8,8 +8,6 @@ screenshot:
     1920w: /assets/img/projects/cubed/srcset@1x.jpg
     960w: /assets/img/projects/cubed/srcset@0,5x.jpg
     480w: /assets/img/projects/cubed/srcset@0,25x.jpg
-
-accent_image: '/assets/img/projects/cubed/sidebar-bg.jpg'
 accent_color: '#00429c'
 
 caption: Rectangular-prism-ed doesn't quite have the same ring

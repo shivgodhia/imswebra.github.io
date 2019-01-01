@@ -1,9 +1,11 @@
 ---
 layout: about
 title: About
-menu: true
-order: 5
+# Menu entries handled in _config.yml
 ---
+
+<!--author-->
+{% include authorabout.md %}
 
 ## More About Me
 I am a student in Edmonton, Canada. Since I was about 10 years old I have had an ever-growing interest in design that started with digital art, mostly due to my inability to draw and the computer's ability to undo. This initial interest has since lead me to explore a wide range of topics, generally enabled by my computer and the internet, and for those around me to develop a vast misconception of my talents and abilities. We all know that if you completed 2/9 javascript courses on [codecademy](https://www.codecademy.com) to appease a teacher in grade six it should "just be easy" (Nick, 11:57am, Recess) to quickly change someone's French grades from my 2012 iPod Touch. Apparently writing over their paper report card with sharpie doesn't count. Since this *sixth grade escapade,* (which also happens to be the name of my new band), I have dabbled in photo manipulation, app design, 3D modeling, game design, listening to people complain about their various technology-related problems, VFX, python programming, logo design, trying to fix people's various technology-related problems once I determine that they have a reasonable balance in "*seems like a human I might want to associate with eventually*" and "*much too annoying to listen to their complaining any longer*," video production, video editing, run on sentences, all the other the interests I never was good at but currently forget, and now, website development. Not in any particular order of course.

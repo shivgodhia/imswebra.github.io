@@ -1,33 +1,30 @@
-{% unless page.redirect %}
-  {% if site.google_analytics %}
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      {% if site.hydejack.cookies_banner %}
-        if (navigator.CookiesOK) {
-          ga('create', '{{ site.google_analytics }}', 'auto');
-        } else if (localStorage && localStorage.getItem('hy:cookiesOK')) {
-          ga('create', '{{ site.google_analytics }}', {
-            'storage': 'none',
-            'clientId': localStorage.getItem('ga:clientId')
-          });
-        } else {
-          ga('create', '{{ site.google_analytics }}', {
-            'storage': 'none'
-          });
-          ga('set', 'forceSSL', true);
-          ga('set', 'anonymizeIp', true);
-        }
-      {% else %}
-        ga('create', '{{ site.google_analytics }}', 'auto');
-      {% endif %}
-      ga('send', 'pageview');
-      loadJSDeferred('https://www.google-analytics.com/analytics.js');
-    </script>
-  {% endif %}
+{% if site.hydejack.dark_mode.dynamic %}
+  <script>!function(w, d) {
+    var h = new Date().getHours();
+    var m = h <= {{ site.hydejack.dark_mode.sunrise | default:"6" }} || h >= {{ site.hydejack.dark_mode.sunset | default:"18" }} ? 'add' : 'remove';
+    d.body.classList[m]('dark-mode');
+  }(window, document);</script>
+{% endif %}
 
-  <!--[if gt IE 9]><!---->
-  {% capture js_url %}{% link assets/js/hydejack-7.4.2.js %}{% endcapture %}
-  <script>loadJSDeferred('{{ js_url | relative_url }}');</script>
+{% unless page.redirect %}
+  <!--[if !IE]><!---->
+  <script>loadJSDeferred(document.getElementById('_hrefJS').href);</script>
   {% include my-scripts.html %}
   <!--<![endif]-->
+
+  {% include body/analytics.html %}
+
+  <script>!function(w, d) {
+    if ('serviceWorker' in w.navigator) {
+      /*{% if site.hydejack.offline.enabled %}*/
+      w.navigator.serviceWorker.register(d.getElementById('_hrefSW').href)
+        .then(r => r.update())
+        .catch(() => {});
+      /*{% else %}*/
+      w.navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /*{% endif %}*/
+    }
+  }(window, document);</script>
 {% endunless %}

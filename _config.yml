@@ -7,14 +7,11 @@
 url:                   https://imswebra.github.io
 
 # IMPORTANT: Set The "base URL" of your site.
-#
-# When hosting your site in a subdirectory of a server, set to /<name of directory>
-# (with leading /, but without the < >)
+# When your site sits in a subdirectory, set to /<name of directory>
+# (with leading /, but without the < >).
 # Use the empty string '' otherwise.
-#
-# When using GitHub Pages, set to '' when hosting a user- or organization page,
-# i.e. when the name of the repository looks like <username>.github.io.
-# Otherwise, set to /<name of repository> (with leading /, but without the < >).
+# For GitHub project sites, this is usually the name of the project,
+# e.g. `/hydejack`.
 baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
@@ -26,7 +23,6 @@ title:                 imswebra.com
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-# NEEDS TO BE CHANGED
 description:           >
   The offical imswebra website, home to all my projects, thoughts, and mistakes.
 
@@ -35,14 +31,14 @@ tagline:               >
   Home to all my projects, thoughts, and mistakes.
 
 # A list of keywords for your blog
-# NEEDS TO BE CHANGED
 keywords:              []
 
-# Used by jekyll-seo-tag...
+# A (square) logo for your site.
+# If provided, it will be shown at the top of the sidebar.
+# It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
-# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
   name:                imswebra
   email:               imswebra@gmail.com
@@ -50,38 +46,90 @@ author:
   # twitter:             <username>
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2018. All rights reserved.
+copyright:             © 2019. All rights reserved.
+
+# Add links to the footer.
+# Typically you'll want to link to your impress, cookies or privacy policy, etc.
+# legal:
+#   - title:             Impress
+#     href:              /impress/
+#   - title:             Cookies Policy
+#     href:              /cookies-policy/
 
 # Format of the permalinks
 permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
-paginate_path:         /blog/page-:num/
+paginate_path:         /page-:num/
 
-# Default permalink configuration (used to get the custom posts url)
-defaults:
-  - scope:
-      type: posts
-    values:
-      permalink: /posts/:title/
+# See below for the posts pagination configuration
+
 
 # Customizaton
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.png
+# /assets/img/sidebar-bg.jpg
+accent_image:          none
 accent_color:          '#FF5964'
 
+# This is used for the `theme-color` meta tag,
+# which changes the background color of the browser UI in certain browsers.
+# Defaults to `accent_color`.
+theme_color:           '#FF5964'
+
 # The string encoding which fonts to fetch from Google Fonts.
-# See: <https://qwtel.com/hydejack/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+# See: <https://hydejack.com/docs/configuration/>
+google_fonts:          Roboto+Slab:400|Noto+Sans:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                  Noto Sans, Helvetica, Arial, sans-serif
+# To change font-weight, see _sass/variables.scss
+font:                  Noto Sans, Arial, Helvetica, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
+# To change font-weight, see _sass/variables.scss
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+
+defaults:
+  - scope:
+      path:            projects.md
+    values:
+      menu:            true
+      order:           1
+  - scope:
+      path:            posts.md
+    values:
+      menu:            true
+      order:           2
+  - scope:
+      path:            about.md
+    values:
+      menu:            true
+      order:           3
+  - scope:
+      type:            posts
+    values:
+      permalink:       /posts/:title/
+
+  # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
+  # but we want them to be `WebPage`s:
+  - scope:
+      type:            projects
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            featured_categories
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            featured_tags
+    values:
+      seo:
+        type:          WebPage
+
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
@@ -103,23 +151,26 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [related, random]
+  # [about, newsletter, related, random]
+  post_addons:         [about, random]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [other]
+  project_addons:      [about, other]
 
   # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     false
 
   # Set to `true` if you don't want to show an icon indicating external links
-  no_mark_external:    false
+  no_mark_external:    true
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
   no_push_state:       false
 
-
   # Set to `true` if you want to disable the drawer
   no_drawer:           false
+
+  # Set to `true` to prevent usage of `hy-img` (lazy-loading images).
+  no_img:              false
 
   # Set to `true` if you do not want parts of the css inlined in <head/>
   # This *may* be benefitial when serving the site over HTTP/2.
@@ -147,19 +198,38 @@ hydejack:
   # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   advertise:           false
 
+  # Note that dark mode only works in the PRO version of Hydejack.
+  dark_mode:
+    # Set to `true` to always use the dark theme.
+    always:            false
+
+    # Set to `true` to use the dark theme based on visitors' local time.
+    dynamic:           false
+    sunrise:           6
+    sunset:            18
+
+    # Set to `true` to allow visitors to switch between light and dark mode.
+    icon:              true
+
+  # ⚡️ DANGER ZONE ⚡️
+  # ----------------
+  # This is an _experimental_ feature.
+  # Only use if you know what Service Workers are and how they can impact your site!
+  offline:
+    enabled:           false
+    cache_version:     1
+
 
 # Collections
 # ========================================================================================
 
 collections:
   featured_categories:
-    permalink:         /category/:name/
+    permalink:         /blog/:name/
     output:            true
-
   featured_tags:
-    permalink:         /tag/:name/
+    permalink:         /tag-:name/
     output:            true
-
   projects:
     permalink:         /projects/:path/
     output:            true
@@ -175,35 +245,38 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+  - webpack.config.js
+  - "*.gemspec"
+  - _js
+  - _plugins
+  - .sass-cache
+  - README.md
   - /_projects/_TEMPLATE.md
   - /git/
-include:
-  - LICENSE.md
+  - _todo.md
+  - _imswebrachanges.md
 
 
-# Plugins and Plugin Configuration
+# Plugins
 # ========================================================================================
 
 plugins:
-  # - jekyll-avatar
-  # - jekyll-default-layout
+  - jekyll-default-layout
   - jekyll-feed
-  # - jekyll-gist
-  # - jekyll-optional-front-matter
+  - jekyll-optional-front-matter
   - jekyll-paginate
-  # - jekyll-readme-index
-  # - jekyll-redirect-from
+  - jekyll-readme-index
+  - jekyll-redirect-from
   - jekyll-relative-links
-  # - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-  # - jekyll-titles-from-headings
+  - jekyll-titles-from-headings
 
 # Theme
 # ---------------------------------------------------------------------------------------
 
 # theme: jekyll-theme-hydejack
-# remote_theme: qwtel/hydejack@gem
+# remote_theme: qwtel/hydejack
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
@@ -243,6 +316,7 @@ optional_front_matter:
 
 readme_index:
   remove_originals:    true
+  with_frontmatter:    true
 
 relative_links:
   collections:         true
@@ -267,8 +341,3 @@ compress_html:
 
 sass:
   style:               compressed
-
-# If you are upgrading form v5 (or earlier), uncomment the lines below,
-# so that the location of the feed XML stays the same.
-# feed:
-#   path:                atom.xml
