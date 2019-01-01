@@ -9,7 +9,6 @@ screenshot:
     960w: /assets/img/projects/aiden/srcset@0,5x.jpg
     480w: /assets/img/projects/aiden/srcset@0,25x.jpg
 
-accent_image: '/assets/img/projects/aiden/sidebar-bg.jpg'
 accent_color: '#e76500'
 
 caption: Layered Photoshop text

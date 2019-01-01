@@ -8,8 +8,6 @@ screenshot:
     1920w: /assets/img/projects/PROJECTNAME/srcset@1x.jpg
     960w: /assets/img/projects/PROJECTNAME/srcset@0,5x.jpg
     480w: /assets/img/projects/PROJECTNAME/srcset@0,25x.jpg
-
-accent_image: '/assets/img/projects/PROJECTNAME/sidebar-bg.jpg'
 accent_color: '#COLOR'
 
 caption: CAPTION
