@@ -8,7 +8,6 @@ screenshot:
     1920w: /assets/img/projects/aiden/srcset@1x.jpg
     960w: /assets/img/projects/aiden/srcset@0,5x.jpg
     480w: /assets/img/projects/aiden/srcset@0,25x.jpg
-
 accent_color: '#e76500'
 
 caption: Layered Photoshop text
