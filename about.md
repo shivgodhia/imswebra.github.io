@@ -33,4 +33,4 @@ Its origin in fact has nothing to do with believing one is a Swedish-breast-supp
 ## The Website
 Built with [Jekyll,](https://jekyllrb.com/) running qwtel's [Hydejack Pro.](https://qwtel.com/hydejack/) Developed on [Github.](https://github.com/imswebra/imswebra.github.io)
 
-Most released projects are released freely under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license and are hosted on [Github.](https://github.com/imswebra?tab=repositories) Note that the website as a whole is **not** released under such terms
+Most artwork projects are released freely under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license, and most code / programming projects are released freely under the [MIT](https://opensource.org/licenses/MIT) license. Currently, almost everything is hosted on [Github.](https://github.com/imswebra?tab=repositories) Note that the website as a whole is **not** released under such terms or licenses
